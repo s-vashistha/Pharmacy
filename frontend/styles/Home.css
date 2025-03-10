@@ -1,0 +1,107 @@
+/* Home Container (Full Width) */
+.home-container {
+    width: 100%;
+    /* max-width: 1200px; Keeps content centered */
+    margin: 0 auto;
+    /* padding: 20px; */
+    text-align: center;
+  }
+  
+  /* Page Title */
+  .title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Medicine List - Grid Layout for 4 Cards per Row */
+  .medicine-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); Responsive Grid */
+    grid-template-columns: repeat(2, 1fr); /* Exactly 4 cards per row */
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  /* Individual Medicine Card */
+  .medicine-card {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .medicine-card:hover {
+    transform: scale(1.05);
+    /* transform: translateY(-5px); */
+  }
+  
+  /* Medicine Image */
+  .medicine-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Medicine Name */
+  .medicine-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #222;
+  }
+  
+  /* Price */
+  .medicine-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+  }
+  .medicine-card span {
+    font-weight: bold;
+    color: #28a745;
+  }
+
+  .loading {
+    font-size: 1.5rem;
+    color: #dc3545;
+    text-align: center;
+  }
+
+  /* Add to Cart Button */
+  .add-to-cart {
+    background: #4f3d97;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  .add-to-cart:hover {
+    background:#1b1534;
+  }
+  @media (max-width: 1024px) {
+    .medicine-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .medicine-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .medicine-grid {
+      grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile */
+    }
+  }
+  

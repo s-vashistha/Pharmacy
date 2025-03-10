@@ -1,0 +1,40 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build files
+dist/
+build/
+
+# Vite & Next.js cache
+.vite/
+.next/
+
+# macOS system files
+.DS_Store
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+
+# Backend
+backend/node_modules/
+backend/.env
+
+# Frontend
+frontend/node_modules/
+frontend/.env
